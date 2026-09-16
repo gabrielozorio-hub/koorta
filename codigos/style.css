@@ -1,3 +1,4 @@
+
 :root {
     --koorta-green: #6F8156;
     --koorta-green-dark: #4C5B3B;
@@ -21,10 +22,8 @@
 body {
     margin: 0;
     min-height: 100vh;
-
     background: var(--koorta-green);
     color: var(--koorta-ink);
-
     font-family: inherit;
 
     display: flex;
@@ -34,38 +33,58 @@ body {
     padding: 48px 20px;
 }
 
+footer {
+    color: #d7d5d5;
+    text-align: center;
+    width: 100%;
+
+    margin-top: auto;
+    padding: 20px;
+}
+
+.manutencao {
+    margin: 0;
+}
+
+
 h1 {
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 0.2px;
-
     color: var(--koorta-cream);
-
     text-align: center;
-
     margin: 0 0 30px;
 }
 
+/* NAVBAR */
 .menu-cruds {
     width: 100%;
-    max-width: 420px;
+    max-width: 900px;
 
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 10px;
+
+    background: var(--koorta-card);
+
+    border-radius: var(--radius-md);
 }
 
+/* LINKS DA NAVBAR */
 .menu-cruds a {
     display: block;
 
-    width: 100%;
+    padding: 12px 22px;
 
-    padding: 15px 20px;
-
-    background: var(--koorta-card);
     color: var(--koorta-ink);
+    background: transparent;
 
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-sm);
 
     text-align: center;
     text-decoration: none;
@@ -75,14 +94,20 @@ h1 {
 
     transition:
         background 0.15s ease,
+        color 0.15s ease,
         transform 0.05s ease;
 }
 
+/* QUANDO PASSAR O MOUSE */
 .menu-cruds a:hover {
-    background: var(--koorta-cream);
+    background: var(--koorta-green);
+    color: var(--koorta-cream);
 }
 
+/* QUANDO CLICAR */
 .menu-cruds a:active {
     transform: scale(0.98);
 }
+
+
 
