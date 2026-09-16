@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="victor.css">
+</head>
+<body>
+    <h1>CRIAÇÃO DE SESSÃO</h1>
+
+    <p>Nome</p>
+    <input id="nomeSessao" type="text"/>
+    <br>
+    </br>
+
+    <p>Quantidade de pessoas</p>
+    <input id="pessoas" type="number"/>
+    <br>
+    </br>
+
+    <p>Data da seção</p>
+    <input id="dataSessao" type="date"/>
+    <br>
+    </br>
+
+    <button onclick="salvarDados()">Salvar</button>
+
+    <br>
+    <p>Sessões adicionadas:</p>
+    <div id="editar"></div>
+    <div>
+    <ul id="resultados"></ul>
+    </div>
+
+    <script src="victor.js"> </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+
+:root {
+  --koorta-green: #6F8156;
+  --koorta-green-dark: #4C5B3B;
+  --koorta-green-darker: #3A4630;
+  --koorta-cream: #F3F1EA;
+  --koorta-card: #E8E7E1;
+  --koorta-ink: #22261D;
+  --koorta-muted: #6B6F62;
+  --radius-lg: 28px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+  font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--koorta-green);
+  color: var(--koorta-ink);
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 20px;
+}
+
+body > * {
+  width: 100%;
+  max-width: 420px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--koorta-cream);
+  text-align: center;
+  margin: 0 auto 24px;
+  max-width: 420px;
+}
+
+p {
+  margin: 0 auto 6px;
+  max-width: 420px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--koorta-cream);
+}
+
+input {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 18px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--koorta-card);
+  color: var(--koorta-ink);
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: box-shadow 0.15s ease;
+}
+
+input::placeholder {
+  color: var(--koorta-muted);
+}
+
+input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.35);
+}
+
+input[type="date"],
+input[type="number"] {
+  color-scheme: light;
+}
+
+br {
+  display: none; /* o espaçamento já é resolvido pelas margens acima */
+}
+
+button {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin: 8px auto 32px;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 999px;
+  background: var(--koorta-green-darker);
+  color: var(--koorta-cream);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.05s ease;
+}
+
+button:hover {
+  background: var(--koorta-green-dark);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* "Seções adicionadas" — rótulo no mesmo tom do texto do app */
+#editar {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+#resultados {
+  max-width: 420px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Cada sessão listada vira um cartão claro, no espírito do
+   cartão "# 68855B" do mockup */
+#resultados li {
+  background: var(--koorta-card);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  font-size: 14px;
+  color: var(--koorta-ink);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+#resultados li::before {
+  content: "Sessão";
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--koorta-green-dark);
+}
+
+
+
