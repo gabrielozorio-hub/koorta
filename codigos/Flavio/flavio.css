@@ -1,0 +1,216 @@
+:root {
+  --koorta-green: #6F8156;
+  --koorta-green-dark: #4C5B3B;
+  --koorta-green-darker: #3A4630;
+  --koorta-cream: #F3F1EA;
+  --koorta-card: #E8E7E1;
+  --koorta-ink: #22261D;
+  --koorta-muted: #6B6F62;
+
+  --radius-lg: 28px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+
+  font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Página */
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background: var(--koorta-green);
+  color: var(--koorta-ink);
+
+  font-family: inherit;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 48px 20px;
+}
+
+/* Formulário */
+#form-locacao {
+  width: 100%;
+  max-width: 420px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+#form-locacao label {
+  font-size: 13px;
+  font-weight: 600;
+
+  color: var(--koorta-cream);
+
+  margin-bottom: 6px;
+}
+
+/* Remove os <br> usados para espaçamento */
+#form-locacao br {
+  display: none;
+}
+
+/* Campos */
+#form-locacao input {
+  display: block;
+
+  width: 100%;
+
+  margin: 0 0 18px;
+
+  padding: 12px 16px;
+
+  border: none;
+  border-radius: var(--radius-sm);
+
+  background: var(--koorta-card);
+  color: var(--koorta-ink);
+
+  font-size: 14px;
+  font-family: inherit;
+
+  outline: none;
+
+  transition: box-shadow 0.15s ease;
+}
+
+/* Placeholder */
+#form-locacao input::placeholder {
+  color: var(--koorta-muted);
+}
+
+/* Campo selecionado */
+#form-locacao input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.35);
+}
+
+/* Data */
+#form-locacao input[type="date"] {
+  color-scheme: light;
+}
+
+/* Botões */
+#form-locacao button {
+  display: block;
+
+  width: 100%;
+
+  margin: 8px 0 12px;
+
+  padding: 13px 20px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: var(--koorta-green-darker);
+  color: var(--koorta-cream);
+
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+
+  cursor: pointer;
+
+  transition:
+    background 0.15s ease,
+    transform 0.05s ease;
+}
+
+/* Hover */
+#form-locacao button:hover {
+  background: var(--koorta-green-dark);
+}
+
+/* Clique */
+#form-locacao button:active {
+  transform: scale(0.98);
+}
+
+/* Botão cancelar */
+#botao-cancelar-locacao {
+  background: var(--koorta-green-dark);
+}
+
+/* Título da lista */
+h2 {
+  width: 100%;
+  max-width: 420px;
+
+  margin: 28px auto 16px;
+
+  color: var(--koorta-cream);
+
+  font-size: 20px;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+/* Lista */
+#lista-locacoes {
+  width: 100%;
+  max-width: 420px;
+
+  margin: 0 auto;
+
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+/* Cards das locações */
+#lista-locacoes li {
+  background: var(--koorta-card);
+
+  border-radius: var(--radius-md);
+
+  padding: 14px 16px;
+
+  color: var(--koorta-ink);
+
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Pequeno destaque antes de cada locação */
+#lista-locacoes li::before {
+  content: "Locação";
+
+  font-size: 11px;
+  font-weight: 700;
+
+  color: var(--koorta-green-dark);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  body {
+    padding: 32px 16px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+

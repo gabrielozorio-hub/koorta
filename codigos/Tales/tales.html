@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>produto</title>
+  <link rel="stylesheet" href="tales.css">
+</head>
+<body>
+  <form id="form-esportes" onsubmit="lidarComSubmit(event)">
+    <br/>
+    <br/>
+    <label for="nome">Nome:</label>
+    <br/>
+    <br/>
+    <input type="text" id="nome" name="nome">
+    <br/>
+    <br/>
+    <label for="modalidade">Modalidade:</label>
+    <br/>
+    <br/>
+    <input type="text" id="modalidade" name="modalidade">
+    <br/>
+    <br/>
+    <label for="codigo">Código:</label>
+    <br/>
+    <br/>
+    <input type="text" id="codigo" name="codigo">
+    <br/>
+
+    <button id="botao-submit" type="submit">Enviar</button>
+    <button id="botao-cancelar" type="button" hidden>Cancelar</button>
+  </form>
+
+  <h2>Quadras cadastrados</h2>
+  <ul id="lista-esportes"></ul>
+
+  <script src="tales.js"></script>
+</body>
+</html>

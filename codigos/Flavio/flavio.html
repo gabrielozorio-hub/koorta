@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>locação</title>
+  <link rel="stylesheet" href="flavio.css">
+</head>
+<body>
+  <form id="form-locacao" onsubmit="lidarComSubmitLocacao(event)">
+    <br/>
+    <br/>
+    <label for="codigoLocacao">Código:</label>
+    <br/>
+    <br/>
+    <input type="text" id="codigoLocacao" name="codigoLocacao">
+    <br/>
+    <br/>
+    <label for="Quadra">Nome da Quadra:</label>
+    <br/>
+    <br/>
+    <input type="text" id="Quadra" name="Quadra">
+    <br/>
+    <br/>
+    <label for="Data">Data da Locação:</label>
+    <br/>
+    <br/>
+    <input type="date" id="Data" name="Data">
+    <br/>
+
+    <button id="botao-submit-locacao" type="submit">Enviar</button>
+    <button id="botao-cancelar-locacao" type="button" hidden onclick="cancelarEdicaoLocacao()">Cancelar</button>
+  </form>
+
+  <h2>Locações cadastradas</h2>
+  <ul id="lista-locacoes"></ul>
+
+  <script src="flavio.js"></script>
+</body>
+</html>
