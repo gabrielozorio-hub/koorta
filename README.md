@@ -1,3 +1,28 @@
+# Koorta
+
+Rede social voltada ao esporte: quadras com nível de movimento, sessões de jogo, check-in com pontos, troca por descontos em lojas parceiras e vídeos educativos (Koorta's). Projeto Integrador.
+
+## Estrutura do repositório
+
+| Pasta | Conteúdo |
+|---|---|
+| [`app/`](app/) | **Aplicativo mobile** (React Native + Expo SDK 57, TypeScript). Veja o [README do app](app/README.md) para rodar e testar no celular. |
+| [`docs/`](docs/) | Catálogo de requisitos de dados, modelo conceitual e planilha de casos de uso / requisitos não funcionais. |
+| [`codigos/`](codigos/) | CRUD de sessões em HTML/CSS/JS (descrito abaixo). |
+
+### Rodar o app
+```bash
+cd app
+npm install
+npx expo start --tunnel
+```
+Abrir no celular pelo **Expo Go**. Versão publicada (abre sem PC ligado):
+`exp://u.expo.dev/2ef83019-2c63-4066-94df-b6da41e10b89?runtime-version=exposdk%3A57.0.0&channel-name=main`
+
+> Não clone o projeto dentro do OneDrive: ele quebra o `node_modules`.
+
+---
+
 # CRUD de Sessões
 
 Projeto desenvolvido para a disciplina de programação com o objetivo de praticar os conceitos fundamentais de **HTML, CSS, JavaScript, CRUD e armazenamento de dados no navegador**.
